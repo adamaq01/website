@@ -9,9 +9,6 @@ import PresentationCard from "./PresentationCard";
 const styles = theme => ({
     topBox: {
         height: '60vh'
-    },
-    bottomBox: {
-        height: '5vh'
     }
 });
 
@@ -66,17 +63,6 @@ class Home extends React.Component {
                         </Grid>
                     ))}
                 </Grid>
-                <WaveBorder upperColor={theme.palette.background.default} lowerColor={theme.palette.background.paper}
-                            offset={16}/>
-                <Box bgcolor={theme.palette.background.paper} className={classes.bottomBox}>
-                    <Grid container justify="space-around" alignItems="center" direction="column">
-                        <Grid item>
-                            <Typography variant="overline" color="textSecondary">
-                                Adamaq01 - 2020
-                            </Typography>
-                        </Grid>
-                    </Grid>
-                </Box>
             </Box>
         );
     }

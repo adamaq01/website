@@ -26,7 +26,7 @@ class Bar extends React.Component {
 
         return (
             <div className={classes.root}>
-                <AppBar position="sticky" color="default" className={classes.bar}>
+                <AppBar position="fixed" color="default" className={classes.bar}>
                     <Toolbar>
                         <Typography variant="h5" className={classes.title}>
                             Adamaq01
