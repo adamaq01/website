@@ -25,9 +25,6 @@ const theme = createMuiTheme({
             default: '#181a1b',
             paper: '#252729'
         }
-    },
-    bottomBox: {
-        height: '5vh'
     }
 });
 
@@ -45,7 +42,7 @@ class App extends React.Component {
                     <WaveBorder upperColor={theme.palette.background.default}
                                 lowerColor={theme.palette.background.paper}
                                 offset={16}/>
-                    <Box bgcolor={theme.palette.background.paper} className={theme.bottomBox}>
+                    <Box bgcolor={theme.palette.background.paper}>
                         <Grid container justify="space-between" alignItems="center" direction="column">
                             <Grid item>
                                 <Typography variant="overline" color="textSecondary">

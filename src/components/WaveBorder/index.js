@@ -21,7 +21,7 @@ const styles = theme => ({
     },
     parallax: {
         "& > use": {
-            animation: "$moveForever 3s cubic-bezier(0.62, 0.5, 0.38, 0.5) infinite",
+            animation: "$moveForever 5s cubic-bezier(0.62, 0.5, 0.38, 0.5) infinite",
             animationDelay: "-2s"
         }
     }

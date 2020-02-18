@@ -21,10 +21,10 @@ class Home extends React.Component {
             <Box>
                 <Box bgcolor={theme.palette.secondary.main} className={classes.topBox}>
                     <Grid container
-                          spacing={0}
                           alignItems="center"
                           justify="center"
-                          style={{minHeight: '60vh'}}>
+                          alignContent="center"
+                          style={{minHeight: '65vh'}} direction="column">
                         <Grid item style={{width: '90%'}}>
                             <PresentationCard>
                                 <Grid container justify="space-around" direction="column" alignItems="flex-start">
