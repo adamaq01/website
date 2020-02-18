@@ -8,7 +8,16 @@ import PresentationCard from "./PresentationCard";
 
 const styles = theme => ({
     topBox: {
-        height: '60vh'
+        height: '50vh',
+        [theme.breakpoints.up('xs')]: {
+            height: '60vh'
+        },
+    },
+    presentationCard: {
+        minHeight: '58vh',
+        [theme.breakpoints.up('xs')]: {
+            minHeight: '68vh'
+        },
     }
 });
 
@@ -24,7 +33,7 @@ class Home extends React.Component {
                           alignItems="center"
                           justify="center"
                           alignContent="center"
-                          style={{minHeight: '65vh'}} direction="column">
+                          direction="column" className={classes.presentationCard}>
                         <Grid item style={{width: '90%'}}>
                             <PresentationCard>
                                 <Grid container justify="space-around" direction="column" alignItems="flex-start">

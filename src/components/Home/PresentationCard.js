@@ -27,7 +27,10 @@ const styles = theme => ({
     },
     buttons: {
         height: '7%',
-        marginLeft: '-2.5%'
+        marginLeft: '-2.5%',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: '-5%'
+        },
     },
     image: {
         marginLeft: '2%',
